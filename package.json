@@ -2,6 +2,9 @@
   "name": "sotif",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "test": "npx jest tests/"
+  },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@syncfusion/ej2-react-querybuilder": "^20.3.47",

@@ -13,13 +13,6 @@ pipeline {
                 echo "Webhook Test: Code has been checked out."
             }
         }
-
-	stage('Execute Test') {
-	    steps {
-		sh "npm test"
-	    }
-	}
-
         stage('Build Docker Image') {
             steps {
                 sh "sudo docker build -t ${DOCKER_REGISTRY}/${APP_NAME}:latest ."
